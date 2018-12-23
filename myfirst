@@ -4,7 +4,7 @@ var input=x;
 alert(input);
 
 var car = Simbla.Object.extend("_User");
-var query = new Simbla.Query(car);
+var query = new Simbla.Quebk;n;kn;dsln;fn;lfry(car);
 query.get(input, {
    success: function(car) {
        alert("success");
