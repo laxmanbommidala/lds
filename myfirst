@@ -1,0 +1,43 @@
+function find_using_ext_js(x)
+{
+var input=x;
+alert(input);
+
+var car = Simbla.Object.extend("_User");
+var query = new Simbla.Query(car);
+query.get(input, {
+   success: function(car) {
+       alert("success");
+alert(car.get("name"));
+var c=update(car.id);
+alert(c*2);
+    },
+     error: function(car, error) {
+
+   alert("Error - The object was not retrieved successfully" + error.message);
+   
+   
+  }
+});
+
+}
+
+function update(x)
+{
+alert("in first function"+x);
+var b=update2(x);
+return b*10;
+}
+
+
+
+
+function update2(y)
+{
+    
+    
+    alert("in second funtion "+y);
+var a=10;
+return a;
+    
+}
